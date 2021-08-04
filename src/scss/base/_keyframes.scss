@@ -1,0 +1,135 @@
+@keyframes clipInLeft {
+    0% {
+        clip-path: polygon(-10% -10%, -10% -10%, -10% 110%, -10% 110%);
+    }
+    100% {
+        clip-path: polygon(-10% -10%, 110% -10%, 110% 110%, -10% 110%);
+    }
+}
+
+@keyframes clipInRight {
+    0% {
+        clip-path: polygon(110% -10%, 110% -10%, 110% 110%, 110% 110%);
+    }
+    100% {
+        clip-path: polygon(-10% -10%, 110% -10%, 110% 110%, -10% 110%);
+    }
+}
+
+@keyframes clipInUp {
+    0% {
+        clip-path: polygon(-10% 110%, -10% 110%, 110% 110%, 110% 110%);
+    }
+    100% {
+        clip-path: polygon(-10% 110%, -10% -10%, 110% -10%, 110% 110%);
+    }
+}
+
+@keyframes clipInDown {
+    0% {
+        clip-path: polygon(-10% -10%, -10% -10%, 110% -10%, 110% -10%);
+    }
+    100% {
+        clip-path: polygon(-10% 110%, -10% -10%, 110% -10%, 110% 110%);
+    }
+}
+
+@keyframes fadeInUpSmall {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes softScaleOut {
+    to {
+        -webkit-transform: scale(1.1);
+        opacity: 0
+    }
+}
+
+@keyframes softScaleIn {
+    from {
+        -webkit-transform: scale(.9);
+        opacity: 0
+    }
+
+    to {
+        -webkit-transform: scale(1);
+        opacity: 1
+    }
+}
+
+@keyframes fadeOutKenBurns {
+    from {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes fadeInKenBurns {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+  
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.fadeInUpSmall {
+    animation-name: fadeInUpSmall;
+}
+
+.softScaleIn {
+    animation-name: softScaleIn;
+}
+
+.softScaleOut {
+    animation-name: softScaleOut;
+}
+
+.fadeInKenBurns {
+    animation-name: fadeInKenBurns;
+}
+
+
+.fadeOutKenBurns {
+    animation-name: fadeOutKenBurns;
+}
+
+.clipInLeft {
+    animation-name: clipInLeft;
+}
+
+.clipInRight {
+    animation-name: clipInRight;
+}
+
+.clipInDown {
+    animation-name: clipInDown;
+}
+
+.clipInUp {
+    animation-name: clipInUp;
+}

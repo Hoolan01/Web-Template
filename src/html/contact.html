@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Showroom</title>
+    <!-- build:css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+    <div class="loader"></div>
+    @@include('./html-component/mobile-nav.html')
+    <div class="wrapper">
+        @@include('./html-component/header.html')
+        <section class="hero">
+            <div class="hero__inner">
+                <div class="hero__panel hero__panel--border wow clipInLeft">
+                    <div class="hero__panel-wrap">
+                        <h1 class="hero__panel-title">Contact</h1>
+                    </div>
+                </div>
+                <div class="hero__img">
+                    <img src="./assets/img/hero2.jpg" alt="chinese noodles">
+                </div>
+            </div>
+        </section>
+        <main class="main-wrap">
+            <section class="section-contact">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="block-text wow clipInLeft">
+                                <h3 class="subtitle">Contact</h3>
+                                <h2>Réservez une table...<br>ou laissez votre message</h2>
+                                <p>Situé à la rue Vuillemin à Beau Bassin, Noodle Garden est un endroit peu conventionnel… Non, ce n’est pas une « baz mines » comme on retrouve un peu partout à travers l’île, mais bien un restaurant climatisé, assez spacieux, décoré avec une musique d’ambiance.</p>
+                                <p><strong>Noodle Garden est ouvert du lundi au samedi pour le déjeuner uniquement, entre 11 heures et 15 heures.</strong></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <form class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mt-4">
+                                            <label class="contact-form__label">Nom</label>
+                                            <input class="contact-form__input" type="text" id="fname" placeholder="Votre nom au complet *">
+                                            <div class="contact-form__txt contact-form__txt--error">Ce champ est obligatoire</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mt-4">
+                                            <label class="contact-form__label">Email</label>
+                                            <input class="contact-form__input" type="email" id="email" placeholder="Votre adresse e-mail">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mt-4">
+                                            <label class="contact-form__label">Tel</label>
+                                            <input class="contact-form__input" type="tel" id="email" placeholder="Votre numéro de téléphone">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mt-4">
+                                            <label class="contact-form__label">Votre demande</label>
+                                            <select class="contact-form__input contact-form__input--select">
+                                                <option>Demande de réservation</option>
+                                                <option>Questions sur les produits et services</option>
+                                                <option>Autres</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="mt-4">
+                                            <label class="contact-form__label">Message</label>
+                                            <textarea class="contact-form__textarea" type="text" placeholder="Précisez votre demande"></textarea>
+                                        </div>
+                                        <div class="mt-4 text-center">
+                                            <button class="btn btn--secondary">Envoyer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('./html-component/footer.html')
+    </div>
+    <!-- build:js -->
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

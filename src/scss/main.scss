@@ -1,0 +1,17 @@
+// 1. Configuration and helpers
+@import "utils/modules";
+
+// 2. Vendors
+@import "vendors/modules";
+
+// 3. Base
+@import "./base/modules";
+
+// 4. Layout-related sections
+@import "layout/modules";
+
+// 5. Components
+@import "components/modules";
+
+// 6. Pages
+@import "pages/modules";

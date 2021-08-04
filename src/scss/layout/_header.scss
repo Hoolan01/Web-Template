@@ -1,0 +1,100 @@
+.header {
+    height: $header-height;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    top: 0;
+    background: rgba(255,255,255,.85);
+    backdrop-filter: saturate(180%) blur(12px);
+    transition: 0.3s ease-in-out;
+
+    &--scroll {
+        box-shadow: rgba(0, 0, 0, 0.04) 0px 5px 7px 0px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        padding-right: 5rem;
+
+        @include media-breakpoint-up(lg) {
+            padding-right: 0;
+        }
+    }
+
+    &__left, &__right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn {
+        cursor: pointer;
+        display: block;
+        width: 5rem;
+        height: 100%;
+        background: url('../assets/img/icon-menu.svg') $secondaryColor no-repeat center center;
+        background-size: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include media-breakpoint-up(lg) {
+            display: none;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        
+        &-img {
+            max-height: 2.2rem;
+            max-width: 100%;
+            margin-right: 0.5rem;
+        }
+
+        &-txt {
+            color: $primaryColor;
+            font-family: $primaryFont;
+            font-size: 1.2rem;
+            font-weight: 800;
+
+            @include media-breakpoint-up(md) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &__nav {
+        display: none;
+        list-style: none;
+        margin: 0 0 0 5rem;
+        padding: 0;
+
+        @include media-breakpoint-up(lg) {
+            display: flex;
+        }
+
+        &-link {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: $primaryColor;
+
+            & + & {
+                margin-left: 2.5rem;
+            }
+
+            &:hover, &.is-active {
+                color: $secondaryColor;
+            }
+
+            > a {
+                color: inherit;
+                display: inline-block;
+                text-transform: capitalize;
+                transition: 0.3s ease-in-out;
+            }
+        }
+    }
+}

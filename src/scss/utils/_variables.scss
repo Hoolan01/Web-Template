@@ -1,0 +1,21 @@
+//Color variables
+
+$primaryColor: #002D4C;
+$secondaryColor: #B98C50;
+$tertiaryColor: #DBE1E6;
+
+$text-color: #556570cc;
+
+$mobile-bg : #001c2f;
+
+//Typograhy variables
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+$primaryFont: 'Mulish', sans-serif;
+$tertiaryFont: 'Covered By Your Grace', cursive;
+
+//Layout variables
+
+$header-height: 70px;

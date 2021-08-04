@@ -1,0 +1,40 @@
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: 0;
+    background: $mobile-bg;
+    opacity: 0;
+    visibility: hidden;
+    transition: width 0.3s ease-in-out;
+    transition: opacity 0.3s 0.2s ease-in-out;
+
+    &__btn {
+        width: 5rem;
+        height: $header-height;
+        background: url("../assets/img/close.svg") no-repeat $secondaryColor center center;
+        background-size: 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+    }
+
+    &__list {
+        padding: $header-height 0 2rem;
+    }
+
+    &__link {
+        > a {
+            display: block;
+            padding: 1rem 2rem;
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: #fff;
+            text-transform: capitalize;
+            border-bottom: 1px dashed rgba(255,255,255,.2);
+        }
+    }
+}

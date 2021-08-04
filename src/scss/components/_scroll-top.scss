@@ -1,0 +1,22 @@
+.back-to-top{
+    visibility: hidden;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,.15);
+    background: url(../assets/img/scroll-top.svg) $secondaryColor no-repeat center;
+    background-size: 15px;
+    position: fixed;
+    bottom: 100px;
+    right: 15px;
+    z-index: 3;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &.is-active{
+        visibility: visible;
+        opacity: 1;
+        bottom: 50px;
+    }
+}

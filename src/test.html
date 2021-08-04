@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Zoom Virtual Assistant</title>
+        <style type="text/css">
+            body {
+                margin: 0;
+                height: 100%;
+            }
+
+            .header-logo {
+                background: url(./img/logo.svg) #40444f no-repeat 50%;
+                background-size: 17%;
+                height: 5%;
+            }
+
+            .bg {
+                background-image: url("./img/back.jpg");
+                height: 95%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .WACLauncher__ButtonContainer {
+                border-radius: 25px !important;
+            }
+            #WACLauncher__Button {
+                border-radius: 20px !important;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="header-logo"></header>
+        <div class="bg"></div>
+    </body>
+
+    <!-- <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "03685077-9f64-4f36-a680-0f915da81020", // The ID of this integration.
+            region: "eu-gb", // The region your integration is hosted in.
+            serviceInstanceID: "48098538-5b28-4b07-8bd6-3cf347a3c9c1", // The ID of your service instance.
+            onLoad: function (instance) {
+                instance.render();
+            },
+        };
+        setTimeout(function () {
+            const t = document.createElement("script");
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+            document.head.appendChild(t);
+        });
+    </script> -->
+</html>

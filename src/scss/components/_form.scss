@@ -1,0 +1,55 @@
+.contact-form{
+    position: relative;
+    padding: 0 15px;
+
+    &__label {
+        font-weight: 700;
+        color: $primaryColor;
+        font-size: 0.8rem;
+    }
+
+    &__input, &__textarea{
+        width: 100%;
+        border: 1px solid #F0F3F7;
+        height: 40px;
+        padding: 0 15px;
+        background-color: #F6F7F8;
+        color: #878a8f;
+        outline: 0;
+        font-size: 0.8rem;
+        transition: 0.3s ease-in-out;
+
+        &:focus{
+            padding-left: 20px;
+            box-shadow: 0 0 10px rgba(0, 45, 76, 0.1);
+        }
+    }
+
+    &__textarea{
+        min-height: 100px;
+        max-height: 200px;
+        padding-top: 20px;
+    }
+
+    &__txt{
+        display: block;
+        font-size: 0.7rem;
+        color: #000;
+        padding: 5px 15px;
+        font-style: italic;
+
+        &--error{
+            background: #E24C4B;
+            color: #fff;
+            animation: clipInLeft 0.5s linear;
+        }
+    }
+
+    &__input--select {
+        appearance: none;
+        background: url('../assets/img/down-arrow.svg')#F6F7F8 no-repeat right 0.1rem center;
+        background-size: 20px;
+        padding-right: 1.5rem;
+    }
+
+}

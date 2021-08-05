@@ -13,6 +13,7 @@ const htmlreplace = require("gulp-html-replace");
 const cleanCSS = require("gulp-clean-css");
 const imagemin = require("gulp-imagemin");
 const fileinclude = require("gulp-file-include");
+const replace = require("gulp-replace");
 const browserSync = require("browser-sync").create();
 
 // Compile sass files
@@ -78,6 +79,7 @@ function replaceLink() {
                 css: "css/main.min.css",
             })
         )
+        .pipe(replace(".html", ""))
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(dest("dist"));
 }
@@ -92,7 +94,7 @@ function image() {
 
 // Image optimization
 
-function h() {
+function CopyHTAccess() {
     return src("src/.htaccess").pipe(dest("dist/"));
 }
 
@@ -110,4 +112,4 @@ function serve() {
 }
 
 exports.default = series(fileInclude, sassify, combineJS, serve);
-exports.build = series(parallel(cssMinify, minifyJS, replaceLink), image, h);
+exports.build = series(parallel(cssMinify, minifyJS, replaceLink), image, CopyHTAccess);
